@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfred GG33</title>
+  <meta name="description" content="Clean luxury digital business card for Alfred GG33." />
+  <style>
+    :root{--bg:#07070a;--gold:#c8a96a;--gold2:#e2c58e;--text:#f5efe4;--muted:#a7a09a;--line:rgba(200,169,106,.2)}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at top,rgba(200,169,106,.14),transparent 30%),linear-gradient(180deg,#0b0b10,#040405 72%);color:var(--text);display:grid;place-items:center;padding:24px}
+    .card{width:min(980px,100%);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:28px;box-shadow:0 24px 90px rgba(0,0,0,.52);overflow:hidden}
+    .hero{padding:64px 28px 40px;text-align:center;border-bottom:1px solid var(--line)}
+    .eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.24em;font-size:.78rem;margin-bottom:18px}
+    h1{margin:0;font-size:clamp(2.7rem,8vw,5.8rem);letter-spacing:-.05em;line-height:.92}
+    .sub{margin:18px auto 0;max-width:680px;color:var(--muted);font-size:1.05rem;line-height:1.7}
+    .content{display:grid;grid-template-columns:1.2fr .8fr}
+    .left,.right{padding:28px}.left{border-right:1px solid var(--line)}
+    .section-title{margin:0 0 14px;color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;font-size:.8rem}
+    .buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .btn{display:flex;align-items:center;justify-content:center;min-height:54px;padding:14px 18px;border-radius:16px;text-decoration:none;color:var(--text);border:1px solid rgba(200,169,106,.26);background:rgba(255,255,255,.03);transition:transform .18s ease,border-color .18s ease,background .18s ease}
+    .btn:hover{transform:translateY(-1px);border-color:rgba(226,197,142,.56);background:rgba(200,169,106,.08)}
+    .panel{margin-top:18px;background:rgba(255,255,255,.03);border:1px solid rgba(200,169,106,.16);border-radius:22px;padding:22px}
+    .row{display:flex;justify-content:space-between;gap:16px;color:var(--text);padding:10px 0;border-bottom:1px solid rgba(200,169,106,.1)}
+    .row:last-child{border-bottom:0}
+    .muted{color:var(--muted)}
+    .qrbox{width:190px;aspect-ratio:1;margin:14px auto 12px;border-radius:18px;border:1px dashed rgba(200,169,106,.4);background:rgba(0,0,0,.2);display:grid;place-items:center;color:var(--muted);text-align:center;padding:18px}
+    .footer{padding:18px 28px 28px;text-align:center;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+    .small{font-size:.88rem;color:var(--muted)}
+    @media (max-width:760px){.hero{padding:48px 22px 32px}.content{grid-template-columns:1fr}.left{border-right:0;border-bottom:1px solid var(--line)}.buttons{grid-template-columns:1fr}.left,.right{padding:22px}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="hero">
+      <div class="eyebrow">GG33 Alfred</div>
+      <h1>Alfred GG33</h1>
+      <p class="sub">Clean guidance. Strong presence. One simple place to discover the work, the pricing, and the next step.</p>
+    </section>
+
+    <section class="content">
+      <div class="left">
+        <p class="section-title">Quick Links</p>
+        <div class="buttons">
+          <a class="btn" href="#pricing">View Pricing</a>
+          <a class="btn" href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="https://t.me/YOURUSERNAME" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn" href="https://instagram.com/YOURUSERNAME" target="_blank" rel="noopener">Instagram / X</a>
+        </div>
+
+        <div class="panel">
+          <p class="section-title">What You Get</p>
+          <div class="row"><span>Simple premium presence</span><span>+</span></div>
+          <div class="row"><span>Direct contact path</span><span>+</span></div>
+          <div class="row"><span>Pricing access</span><span>+</span></div>
+          <div class="row"><span>Clean mobile experience</span><span>+</span></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <p class="section-title">Scan for Pricing</p>
+        <div class="panel" style="text-align:center;">
+          <div class="qrbox" id="pricing">QR CODE<br><span class="small">Replace with pricing QR</span></div>
+          <div class="muted">Point this to your pricing page.</div>
+          <div class="small">Ideal for sharing on cards, bios, and messages.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Private • Direct • Simple</div>
+  </main>
+</body>
+</html>
